@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCart | E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+</head>
+<body class="bg-slate-100 font-sans">
+    <header>
+        <div class="navbar bg-base-100 shadow-sm sticky top-0 z-50 px-4 lg:px-12 ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+                </div>
+                <a href="index.html" class="btn btn-ghost text-2xl font-bold text-blue-600">SwiftCart</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-6 font-medium">
+                <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+                <li><a href="products.html" class="hover:text-blue-600">Products</a></li>
+                <li><a class="hover:text-blue-600">About</a></li>
+                <li><a class="hover:text-blue-600">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-circle btn-ghost text-blue-600"> <i class="fa-solid fa-cart-shopping text-xl"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="overflow-hidden">
+            <div id="hero-img" class="hero min-h-[500px]" style="background-image: url('Assets/banner-image.png');">
+                <div class="hero-overlay bg-black bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-xl">
+                    <h1 class="mb-5 text-5xl font-bold leading-tight">Best Collection <br> For You</h1>
+                    <p class="mb-8 text-lg">
+                        Discover the latest trends in fashion, electronics, and more. 
+                        Shop with confidence and style at SwiftCart.
+                    </p>
+                    <a href="products.html" class="btn btn-primary border-none bg-blue-600 hover:bg-blue-700 px-8 text-white">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 px-4 lg:px-12 container mx-auto">
+            <div class="text-center space-y-3 mb-12">
+                <h1 class="font-bold text-3xl text-gray-800">Why Choose Us</h1>
+                <p class="text-gray-500 font-medium">We provide the best shopping experience with top-notch services</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card h-full pt-6"> <div class="card-body bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow relative">
+                        <span class="absolute -top-6 left-6 text-2xl text-blue-500 shadow-md w-12 h-12 flex items-center justify-center bg-white rounded-lg">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </span>
+                        <h2 class="font-bold text-lg mt-4">Fast Delivery</h2>
+                        <p class="text-gray-500 text-sm">Get your orders delivered to your doorstep quickly and efficiently.</p>
+                    </div>
+                </div>
+
+                <div class="card h-full pt-6">
+                    <div class="card-body bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow relative">
+                        <span class="absolute -top-6 left-6 text-2xl text-blue-500 shadow-md w-12 h-12 flex items-center justify-center bg-white rounded-lg">
+                            <i class="fa-solid fa-headset"></i>
+                        </span>
+                        <h2 class="font-bold text-lg mt-4">24/7 Support</h2>
+                        <p class="text-gray-500 text-sm">Our support team is available around the clock to assist you.</p>
+                    </div>
+                </div>
+
+                <div class="card h-full pt-6">
+                    <div class="card-body bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow relative">
+                        <span class="absolute -top-6 left-6 text-2xl text-blue-500 shadow-md w-12 h-12 flex items-center justify-center bg-white rounded-lg">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </span>
+                        <h2 class="font-bold text-lg mt-4">Secure Payment</h2>
+                        <p class="text-gray-500 text-sm">Experience safe and secure transactions with our encrypted systems.</p>
+                    </div>
+                </div>
+
+                <div class="card h-full pt-6">
+                    <div class="card-body bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow relative">
+                        <span class="absolute -top-6 left-6 text-2xl text-blue-500 shadow-md w-12 h-12 flex items-center justify-center bg-white rounded-lg">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </span>
+                        <h2 class="font-bold text-lg mt-4">Easy Returns</h2>
+                        <p class="text-gray-500 text-sm">Not satisfied? Return your products easily within 30 days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-20 mb-20 px-4 lg:px-12 container mx-auto">  
+    <div class="flex justify-between items-end mb-8">
+        <div>
+            <h1 class="text-4xl font-bold text-gray-800">Trending Now</h1>
+            <p class="text-gray-500 mt-2">Top picks this week</p>
+        </div>
+        <a href="products.html" class="btn btn-outline btn-primary btn-sm">View All</a>
+    </div>
+
+    <div id="trending-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="card bg-base-100 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col justify-between">
+            <div class="px-4 pt-4">
+                <div class="bg-[#F3F4F6] rounded-xl h-48 flex items-center justify-center p-4 relative">
+                    <img src="Assets/cloth1-png.png" alt="Mens Casual Slim Fit" class="h-full w-auto object-contain mix-blend-multiply" />
+                </div>
+            </div>
+            <div class="card-body px-4 pb-4 pt-4 flex-grow">
+                <div class="flex justify-between items-center text-xs text-gray-500 mb-2">
+                    <span class="bg-blue-50 text-blue-600 px-2 py-1 rounded-full capitalize font-medium">Men's Clothing</span>
+                    <div class="flex items-center gap-1 text-gray-500 font-medium">
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <span>4.5</span>
+                        <span class="text-gray-400">(120)</span>
+                    </div>
+                </div>
+                <h2 class="card-title text-base font-bold text-gray-800 h-10 overflow-hidden leading-tight">
+                    Mens Casual Slim Fit
+                </h2>
+                <div class="mt-auto pt-4">
+                    <p class="text-lg font-bold text-gray-900 mb-3">$15.99</p>
+                    <div class="flex flex-row justify-between gap-3 w-full">
+                        <button class="btn btn-sm btn-outline border-gray-300 text-gray-600 hover:bg-primary hover:text-white flex-1">
+                            <i class="fa-regular fa-eye"></i> Details
+                        </button>
+                        <button class="btn btn-sm btn-primary flex-1 text-white">
+                            <i class="fa-solid fa-cart-shopping"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-100 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col justify-between">
+            <div class="px-4 pt-4">
+                <div class="bg-[#F3F4F6] rounded-xl h-48 flex items-center justify-center p-4 relative">
+                    <img src="Assets/cloth-2.png" alt="Mens Casual Slim Fit" class="h-full w-auto object-contain mix-blend-multiply" />
+                </div>
+            </div>
+            <div class="card-body px-4 pb-4 pt-4 flex-grow">
+                <div class="flex justify-between items-center text-xs text-gray-500 mb-2">
+                    <span class="bg-blue-50 text-blue-600 px-2 py-1 rounded-full capitalize font-medium">Men's Clothing</span>
+                    <div class="flex items-center gap-1 text-gray-500 font-medium">
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <span>4.5</span>
+                        <span class="text-gray-400">(120)</span>
+                    </div>
+                </div>
+                <h2 class="card-title text-base font-bold text-gray-800 h-10 overflow-hidden leading-tight">
+                    Mens Casual Slim Fit
+                </h2>
+                <div class="mt-auto pt-4">
+                    <p class="text-lg font-bold text-gray-900 mb-3">$15.99</p>
+                    <div class="flex flex-row justify-between gap-3 w-full">
+                        <button class="btn btn-sm btn-outline border-gray-300 text-gray-600 hover:bg-primary hover:text-white flex-1">
+                            <i class="fa-regular fa-eye"></i> Details
+                        </button>
+                        <button class="btn btn-sm btn-primary flex-1 text-white">
+                            <i class="fa-solid fa-cart-shopping"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col justify-between">
+            <div class="px-4 pt-4">
+                <div class="bg-[#F3F4F6] rounded-xl h-48 flex items-center justify-center p-4 relative">
+                    <img src="Assets/jewelery.jpeg" alt="John Hardy Women's Legend" class="h-full w-auto object-contain mix-blend-multiply" />
+                </div>
+            </div>
+            <div class="card-body px-4 pb-4 pt-4 flex-grow">
+                <div class="flex justify-between items-center text-xs text-gray-500 mb-2">
+                    <span class="bg-blue-50 text-blue-600 px-2 py-1 rounded-full capitalize font-medium">Jewelery</span>
+                    <div class="flex items-center gap-1 text-gray-500 font-medium">
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <span>4.8</span>
+                        <span class="text-gray-400">(400)</span>
+                    </div>
+                </div>
+                <h2 class="card-title text-base font-bold text-gray-800 h-10 overflow-hidden leading-tight">
+                    John Hardy Women's Legend
+                </h2>
+                <div class="mt-auto pt-4">
+                    <p class="text-lg font-bold text-gray-900 mb-3">$695.00</p>
+                    <div class="flex flex-row justify-between gap-3 w-full">
+                        <button class="btn btn-sm btn-outline border-gray-300 text-gray-600 hover:bg-primary hover:text-white flex-1">
+                            <i class="fa-regular fa-eye"></i> Details
+                        </button>
+                        <button class="btn btn-sm btn-primary flex-1 text-white">
+                            <i class="fa-solid fa-cart-shopping"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    </main>
+    
+    <footer class="bg-[#1D232A] text-gray-400 py-16">
+      <div class="container mx-auto px-4 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold text-blue-600">SwiftCart</h3>
+          <p class="text-sm leading-relaxed">
+            Your one-stop shop for all your fashion and lifestyle needs. Quality products, fast delivery, and excellent support.
+          </p>
+          <p class="text-xs">© 2025 SwiftCart, Inc. All rights reserved.</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">QUICK LINKS</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-primary">Home</a></li>
+            <li><a href="#" class="hover:text-primary">Products</a></li>
+            <li><a href="#" class="hover:text-primary">About</a></li>
+            <li><a href="#" class="hover:text-primary">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">SUPPORT</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-primary">FAQ</a></li>
+            <li><a href="#" class="hover:text-primary">Shipping</a></li>
+            <li><a href="#" class="hover:text-primary">Returns</a></li>
+            <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">SUBSCRIBE TO OUR NEWSLETTER</h4>
+          <p class="text-sm mb-4">The latest news, articles, and resources, sent to your inbox weekly.</p>
+          <div class="join w-full">
+            <input class="input input-bordered join-item w-full bg-white text-black" placeholder="Enter your email" />
+            <button class="btn btn-primary join-item text-white">Subscribe</button>
+          </div>
+          
+          <div class="flex gap-4 mt-6">
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
