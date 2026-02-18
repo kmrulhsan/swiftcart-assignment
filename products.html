@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftCart | E-Commerce</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="font-sans">
+    
+    <nav class="border-b border-gray-100">
+      <div class="navbar bg-base-100 container mx-auto px-4 ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-cart-shopping text-xl"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a class="text-primary font-bold">Products</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a href="index.html" class="btn btn-ghost text-2xl font-bold text-blue-600">SwiftCart</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 gap-6 font-medium text-gray-600">
+            <li><a href="index.html" class="hover:text-blue-600 font-bold">Home</a></li>
+            <li><a class="text-blue-600 font-bold">Products</a></li>
+            <li><a class="hover:text-blue-600">About</a></li>
+            <li><a class="hover:text-blue-600">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <div class="text-blue-600">
+              <i class="fa-solid fa-cart-shopping text-xl"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mx-auto px-4 lg:px-12 py-10 min-h-screen">
+      <div class="text-center space-y-2 mb-8">
+        <h1 class="text-3xl lg:text-4xl font-bold text-gray-900">Our Products</h1>
+        <p class="text-gray-500 max-w-lg mx-auto">
+          Browse our collection of premium products carefully selected for you.
+        </p>
+      </div>
+
+      <div
+        id="category-container"
+        class="flex flex-wrap justify-center gap-3 mb-10"
+      >
+        </div>
+      <div id="spinner" class="hidden text-center py-20">
+        <span class="loading loading-spinner loading-lg text-primary"></span>
+      </div>
+
+      <div
+        id="product-container"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        </div>
+    </main>
+
+    <footer class="bg-[#1D232A] text-gray-400 py-16">
+      <div class="container mx-auto px-4 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold text-blue-600">SwiftCart</h3>
+          <p class="text-sm leading-relaxed">
+            Your one-stop shop for all your fashion and lifestyle needs. Quality products, fast delivery, and excellent support.
+          </p>
+          <p class="text-xs">© 2025 SwiftCart, Inc. All rights reserved.</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">QUICK LINKS</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-primary">Home</a></li>
+            <li><a href="#" class="hover:text-primary">Products</a></li>
+            <li><a href="#" class="hover:text-primary">About</a></li>
+            <li><a href="#" class="hover:text-primary">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">SUPPORT</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-primary">FAQ</a></li>
+            <li><a href="#" class="hover:text-primary">Shipping</a></li>
+            <li><a href="#" class="hover:text-primary">Returns</a></li>
+            <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">SUBSCRIBE TO OUR NEWSLETTER</h4>
+          <p class="text-sm mb-4">The latest news, articles, and resources, sent to your inbox weekly.</p>
+          <div class="join w-full">
+            <input class="input input-bordered join-item w-full bg-white text-black" placeholder="Enter your email" />
+            <button class="btn btn-primary join-item text-white">Subscribe</button>
+          </div>
+          
+          <div class="flex gap-4 mt-6">
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <dialog id="word_modal" class="modal">
+      <div class="modal-box w-11/12 max-w-2xl p-0 overflow-hidden">
+        <div class="bg-primary text-white p-4 flex justify-between items-center">
+            <h3 class="font-bold text-lg">Product Details</h3>
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost text-white"><i class="fa-solid fa-xmark"></i></button>
+            </form>
+        </div>
+        <div id="details-container" class="p-8">
+            </div>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+
+    <script src="./store.js"></script>
+  </body>
+</html>
