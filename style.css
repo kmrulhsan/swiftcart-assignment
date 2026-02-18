@@ -1,0 +1,6 @@
+
+.category-btn.active {
+        background-color: blue;
+        color: white;
+        border-color: #6C35DE;
+      }
